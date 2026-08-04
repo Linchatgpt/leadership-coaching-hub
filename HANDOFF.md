@@ -204,3 +204,6 @@ Unknown / needs confirmation.
 ## 2026-08-04｜工具欄位技能同步
 
 五個模組的工具欄位已依最新版技能調整。來源設定在 `content/chapter_07_callouts.json` 至 `chapter_11_callouts.json`，公開頁面由 `scripts/update_chapter_learning_page.py` 重新生成。每頁各有一個章節專屬「工具一」，包含清單與 120–300 字操作說明；Chrome 已逐頁驗證手機版呈現與水平溢位。
+## 2026-08-04｜公開部署
+
+GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify production：`https://leadership-coaching-hub.netlify.app`。站點已完成公開部署，根目錄首頁與模組05公開 URL 已以 HTTP 200 驗證。Netlify 本地連結資料位於被 `.gitignore` 排除的 `.netlify/`；source PDF 原始檔、node_modules、本機管理歷史與暫存檔未上傳。

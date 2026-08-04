@@ -84,3 +84,4 @@ Unknown / needs confirmation.
 - 2026-08-04：依模組05 HBR review 建議修訂：統一頁面標題為「教練如何持續提升專業能力？」；在導言後補上「根據工作證據選擇、修正或停止方法」的核心判斷；合併過短結尾；案例第三題改為工作實驗／同儕觀察／督導的取捨題。HTML 重新生成，Chrome 實測標題、核心主張、完整自評結果與 390px 無溢出正常，公開深入閱讀約 5,087 字。
 - 2026-08-04：依使用者要求建立／確認模組05頁面入口。Chrome 從首頁 MODULE 05 卡片實際點擊進入 Chapter11，確認新版 Hero 標題、頁面 title 與手機版無水平溢出正常。
 - 2026-08-04：依最新版 `build-source-book-learning-hub` 工具契約調整五個模組的工具欄位。將 `工具箱專欄` 正規化為 `工具一`，補上章節專屬步驟清單與 153–175 字操作說明：教練契約六問、能力轉行動四格、循環回看四問、承諾修復三行紀錄、一季精熟計畫。五頁重新生成；Chrome 390px 逐頁確認工具內容與無水平溢出正常，自動測試 9/9。
+- 2026-08-04：建立 public GitHub repository `Linchatgpt/leadership-coaching-hub`，初始化 Git、加入公開上傳排除規則、首次 commit 並推送 main。建立 Netlify site `leadership-coaching-hub`，修正 netlify.toml 移除已不存在的舊 Article Hub build command；production 使用 `npx netlify deploy --prod --no-build` 成功，公開網址為 https://leadership-coaching-hub.netlify.app。curl 驗證首頁與模組05 HTTP 200、模組連結與 SEO metadata 可取得；未上傳 source PDF、node_modules、管理歷史與暫存檔。

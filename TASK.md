@@ -175,3 +175,9 @@
 - 依 `build-source-book-learning-hub` 最新工具契約，將五個模組的前置工具欄位由「工具箱專欄」正規化為「工具一」。
 - 每個工具現在都有章節專屬的操作步驟清單與 120–300 字繁中說明；工具內容分別對應教練契約、能力轉行動、循環回看、承諾修復與一季精熟計畫。
 - 已重新生成 Chapter07–11，Chrome 390px 實測五頁工具標籤、標題、說明、清單與無水平溢出均正常。
+## 2026-08-04｜GitHub／Netlify 公開部署
+
+- GitHub repository：`https://github.com/Linchatgpt/leadership-coaching-hub`，已建立 public repository 並推送 `main`。
+- Netlify site：`https://leadership-coaching-hub.netlify.app`，已建立並連結本地專案。
+- Production deploy 已成功；因 Netlify 站台後台原有 `hugo` build command，本次使用 `--no-build` 上傳目前已驗證的靜態根目錄，避免執行不存在的 Hugo 建置。
+- 公開驗證：首頁與 `LPI_Coach_Chapter11.html` HTTP 200，首頁模組連結與模組05標題／SEO description 均可取得。
