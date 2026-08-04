@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.admin_history/
+.netlify/
+tmp/
+reference_materials/source_book/inbox/
+reference_materials/source_book/ocr_work/

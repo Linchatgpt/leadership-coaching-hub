@@ -1,0 +1,32 @@
+{
+  "project_title": "卓越教練力©核心課程",
+  "output_prefix": "LPI_Coach",
+  "primary_source": "A Coach's Guide to Developing Exemplary Leaders (Kouzes, Posner, Biech)",
+  "secondary_sources": [],
+  "target_learners": "台灣企業主管、內部教練、HR／OD與領導力培訓者",
+  "locale": "zh-Hant-TW",
+  "chapter_count": 5,
+  "module_range": [7, 11],
+  "public_module_start": 1,
+  "project_directory": "Leadership Coaching Hub",
+  "home_intro": "聚焦領導教練的成功條件、核心能力、對話流程、失控修復與持續精熟，把教練工作轉成可反思、可追蹤的專業實踐。",
+  "home_map_heading": "選一項教練主題，帶一個真實對話進來。",
+  "editor_password_hash": "4fd7cf032819efc46489a3ff9c6fbd55d16518b289cd053affa665882669272e",
+  "site_shell": {
+    "brand_mark": "XC",
+    "footer_font_size_px": 22,
+    "footer_items": [
+      {
+        "label": "精萃領導™學習中心"
+      },
+      {
+        "label": "林祖威教練",
+        "href": "https://leading4elite.com/about_wesley/"
+      },
+      {
+        "label": "wesley.lin@leading4elite.com",
+        "href": "https://mail.google.com/mail/?view=cm&fs=1&to=wesley.lin@leading4elite.com"
+      }
+    ]
+  }
+}
