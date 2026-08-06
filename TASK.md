@@ -194,3 +194,9 @@
 - 修正：播放按鈕加入 `preventDefault()` 與 `stopPropagation()`；卡片其他區域仍可正常進入模組。
 - 播放器產生器改為可重複執行，不會重複插入按鈕、音檔或腳本。
 - GitHub commit `db9faed` 已推送，Netlify production 已重新部署；Chrome 本機與公開網址均確認點擊後 URL 留在首頁、五個音檔來源正確、390px 無水平溢出。
+## 2026-08-06｜音檔無聲修正
+
+- 已確認 MP3 檔案、Netlify `audio/mpeg` 回傳與瀏覽器解碼均正常；問題是播放器原先隱藏原生控制列，部分內嵌瀏覽器無法穩定操作自製播放狀態。
+- 現在保留播放 icon，並顯示原生 `<audio controls>` 控制列，使用者可直接播放、暫停與調整音量。
+- Chrome 公開網址實測：`readyState=4`、`paused=false`、音檔 `currentSrc` 正確、390px 無水平溢出。
+- GitHub commit `dbbbefe` 已推送，Netlify production 已重新部署。

@@ -213,3 +213,6 @@ GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify produ
 ## 2026-08-06｜音檔播放修正
 
 首頁聲音摘要按鈕已修正卡片連結冒泡問題。播放按鈕現在只控制原生 audio，不會觸發模組導覽；按卡片其他區域仍可進入模組。`scripts/add_index_audio.py` 已具備冪等清理，重新生成不會重複播放器。公開 Netlify URL 已更新並以 Chrome 驗證。
+## 2026-08-06｜聲音播放穩定性
+
+首頁聲音摘要改為「自製播放 icon + 原生 audio controls」雙層操作。音檔仍由 `audio_summaries/` 對應 Module 01–05；原生控制列不再隱藏，以支援內嵌瀏覽器與使用者直接調整音量。公開 Netlify 頁面已測得音訊 readyState 4 且可進入播放狀態。
