@@ -26,8 +26,8 @@ def add_player(match):
     player = (
         f'<div class="module-audio">'
         f'<button class="audio-toggle" type="button" data-audio="audio_summaries/{filename}" '
-        f'aria-label="播放本模組聲音摘要" aria-pressed="false"><span aria-hidden="true">▶</span>'
-        f'<span class="audio-label">播放聲音摘要</span></button>'
+        f'aria-label="播放本模組摘要" aria-pressed="false">'
+        f'<span class="audio-label">播放摘要</span></button>'
         f'<audio controls preload="none" src="audio_summaries/{filename}"></audio></div>'
     )
     return card.replace("<span>開始本模組 →</span>", f"<span>開始本模組 →</span>{player}")
@@ -39,14 +39,12 @@ style = """
 .audio-toggle{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid var(--sage);border-radius:999px;background:var(--paper);color:var(--ink);font:600 12px/1.2 "Noto Sans TC",Arial,sans-serif;cursor:pointer}
 .audio-toggle:hover,.audio-toggle:focus-visible{border-color:var(--gold);outline:2px solid var(--gold);outline-offset:2px}
 .audio-toggle[aria-pressed="true"]{background:var(--ink);color:white}
-.audio-toggle span[aria-hidden="true"]{font-size:11px}
 .module-audio audio{display:block;width:100%;max-width:260px;height:32px}
 """
 script = """
 <script>
 document.querySelectorAll('.audio-toggle').forEach((button) => {
   const audio = button.parentElement.querySelector('audio');
-  const icon = button.querySelector('[aria-hidden="true"]');
   const label = button.querySelector('.audio-label');
   button.addEventListener('click', async (event) => {
     event.preventDefault();
@@ -54,11 +52,11 @@ document.querySelectorAll('.audio-toggle').forEach((button) => {
     if (audio.paused) {
       document.querySelectorAll('.module-audio audio').forEach((other) => { if (other !== audio) other.pause(); });
       await audio.play();
-      icon.textContent = '⏸'; label.textContent = '暫停聲音摘要'; button.setAttribute('aria-pressed', 'true');
+      label.textContent = '暫停摘要'; button.setAttribute('aria-pressed', 'true');
     } else { audio.pause(); }
   });
-  audio.addEventListener('pause', () => { icon.textContent = '▶'; label.textContent = '播放聲音摘要'; button.setAttribute('aria-pressed', 'false'); });
-  audio.addEventListener('ended', () => { icon.textContent = '▶'; label.textContent = '重新播放聲音摘要'; button.setAttribute('aria-pressed', 'false'); });
+  audio.addEventListener('pause', () => { label.textContent = '播放摘要'; button.setAttribute('aria-pressed', 'false'); });
+  audio.addEventListener('ended', () => { label.textContent = '重新播放摘要'; button.setAttribute('aria-pressed', 'false'); });
 });
 </script>
 """
