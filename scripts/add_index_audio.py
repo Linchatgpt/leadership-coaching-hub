@@ -28,7 +28,7 @@ def add_player(match):
         f'<button class="audio-toggle" type="button" data-audio="audio_summaries/{filename}" '
         f'aria-label="播放本模組聲音摘要" aria-pressed="false"><span aria-hidden="true">▶</span>'
         f'<span class="audio-label">播放聲音摘要</span></button>'
-        f'<audio preload="none" src="audio_summaries/{filename}"></audio></div>'
+        f'<audio controls preload="none" src="audio_summaries/{filename}"></audio></div>'
     )
     return card.replace("<span>開始本模組 →</span>", f"<span>開始本模組 →</span>{player}")
 
@@ -40,7 +40,7 @@ style = """
 .audio-toggle:hover,.audio-toggle:focus-visible{border-color:var(--gold);outline:2px solid var(--gold);outline-offset:2px}
 .audio-toggle[aria-pressed="true"]{background:var(--ink);color:white}
 .audio-toggle span[aria-hidden="true"]{font-size:11px}
-.module-audio audio{display:none}
+.module-audio audio{display:block;width:100%;max-width:260px;height:32px}
 """
 script = """
 <script>
