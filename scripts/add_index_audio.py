@@ -20,7 +20,7 @@ source = INDEX.read_text(encoding="utf-8")
 
 def add_player(match):
     href = match.group(1)
-    card = match.group(0)
+    card = re.sub(r'<div class="module-audio">.*?</div>', '', match.group(0), flags=re.S)
     chapter = re.search(r"Chapter(\d+)", href).group(1)
     filename = MODULE_AUDIO[chapter]
     player = (
@@ -48,7 +48,9 @@ document.querySelectorAll('.audio-toggle').forEach((button) => {
   const audio = button.parentElement.querySelector('audio');
   const icon = button.querySelector('[aria-hidden="true"]');
   const label = button.querySelector('.audio-label');
-  button.addEventListener('click', async () => {
+  button.addEventListener('click', async (event) => {
+    event.preventDefault();
+    event.stopPropagation();
     if (audio.paused) {
       document.querySelectorAll('.module-audio audio').forEach((other) => { if (other !== audio) other.pause(); });
       await audio.play();
@@ -61,6 +63,9 @@ document.querySelectorAll('.audio-toggle').forEach((button) => {
 </script>
 """
 
+# Keep the generator idempotent when the homepage is rebuilt.
+updated = re.sub(r'<style>\s*\.module-audio\{.*?</style>', '', updated, count=1, flags=re.S)
+updated = re.sub(r'<script>\s*document\.querySelectorAll\(\'.audio-toggle\'\).*?</script>', '', updated, count=1, flags=re.S)
 updated = updated.replace("</style>", style + "</style>", 1).replace("</body>", script + "</body>")
 INDEX.write_text(updated, encoding="utf-8")
 print(INDEX)
