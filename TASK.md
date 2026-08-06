@@ -188,3 +188,9 @@
 - 播放器樣式與行動版版面已加入 `scripts/add_index_audio.py`；`scripts/build_chapters.py` 會在生成首頁後自動套用音檔播放器。
 - GitHub 已推送 commit `828769c`；Netlify production 已重新部署至 `https://leadership-coaching-hub.netlify.app`。
 - Chrome 實測：首頁 5 張卡片、5 個播放按鈕、5 個音檔、390px 無水平溢出；公開首頁 HTTP 200，公開 MP3 可取得 `audio/mpeg`。
+## 2026-08-06｜修正聲音按鈕跳頁問題
+
+- 根因：播放按鈕位於模組 `<a>` 卡片內，點擊事件冒泡觸發模組導覽。
+- 修正：播放按鈕加入 `preventDefault()` 與 `stopPropagation()`；卡片其他區域仍可正常進入模組。
+- 播放器產生器改為可重複執行，不會重複插入按鈕、音檔或腳本。
+- GitHub commit `db9faed` 已推送，Netlify production 已重新部署；Chrome 本機與公開網址均確認點擊後 URL 留在首頁、五個音檔來源正確、390px 無水平溢出。

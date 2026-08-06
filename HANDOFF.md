@@ -210,3 +210,6 @@ GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify produ
 ## 2026-08-06｜首頁聲音摘要
 
 首頁模組卡片現在連結 `audio_summaries/` 下的五個 MP3 聲音摘要。播放器由 `scripts/add_index_audio.py` 生成，並在 `scripts/build_chapters.py` 完成首頁建置後自動套用。音檔與對應文字稿已納入 GitHub，首頁與音檔已部署到 Netlify production；Chrome 與公開 URL 均已驗證。
+## 2026-08-06｜音檔播放修正
+
+首頁聲音摘要按鈕已修正卡片連結冒泡問題。播放按鈕現在只控制原生 audio，不會觸發模組導覽；按卡片其他區域仍可進入模組。`scripts/add_index_audio.py` 已具備冪等清理，重新生成不會重複播放器。公開 Netlify URL 已更新並以 Chrome 驗證。
