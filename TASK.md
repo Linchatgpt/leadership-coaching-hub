@@ -200,3 +200,8 @@
 - 現在保留播放 icon，並顯示原生 `<audio controls>` 控制列，使用者可直接播放、暫停與調整音量。
 - Chrome 公開網址實測：`readyState=4`、`paused=false`、音檔 `currentSrc` 正確、390px 無水平溢出。
 - GitHub commit `dbbbefe` 已推送，Netlify production 已重新部署。
+## 2026-08-06｜播放摘要按鈕文字調整
+
+- 依使用者畫面回饋，移除左側自製按鈕的 ▶ 圖示，改為純文字「播放摘要」。
+- 右側原生 audio controls 保留播放、進度與音量控制。
+- Chrome 實測五個按鈕均顯示「播放摘要」、五個原生控制列存在、390px 無水平溢出；GitHub commit `270fd9c` 與 Netlify production 已更新。

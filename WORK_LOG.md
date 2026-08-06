@@ -88,3 +88,4 @@ Unknown / needs confirmation.
 - 2026-08-06：依使用者要求將 `audio_summaries` 五個模組音檔加入首頁模組卡片。新增可存取播放／暫停 icon、aria-label、單一音檔播放控制與手機版樣式；建立 `scripts/add_index_audio.py` 並讓總建置器自動套用。GitHub commit 828769c 已推送，Netlify production 重新部署成功；Chrome 五卡片／五音檔／390px 與公開首頁 HTTP 200、MP3 audio/mpeg 驗證通過。
 - 2026-08-06：修正首頁聲音摘要按鈕點擊後跳轉模組的 bug。根因是 button 位於 anchor 內且事件冒泡；加入 preventDefault／stopPropagation，並讓音檔產生器清理既有播放器後再生成，避免重複。GitHub db9faed、Netlify production 更新；Chrome 本機與公開網站確認 URL 不跳轉、音檔 currentSrc 正確、手機版無溢出。
 - 2026-08-06：處理使用者回報「聽不到聲音」。根因調查確認 MP3、Netlify MIME、瀏覽器解碼皆正常；修正為顯示原生 audio controls，保留自製播放 icon。公開 Chrome 實測音訊 readyState 4、paused false、currentSrc 正確，390px 無溢出；GitHub dbbbefe 與 Netlify production 更新完成。
+- 2026-08-06：依使用者提供畫面移除左側聲音播放 ▶ 圖示，改為「播放摘要」純文字；保留右側原生 audio controls。Chrome 五個按鈕與原生控制列、390px 版面確認正常；GitHub 270fd9c、Netlify production 已更新。
