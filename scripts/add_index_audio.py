@@ -58,6 +58,11 @@ document.querySelectorAll('.audio-toggle').forEach((button) => {
   audio.addEventListener('pause', () => { label.textContent = '播放摘要'; button.setAttribute('aria-pressed', 'false'); });
   audio.addEventListener('ended', () => { label.textContent = '重新播放摘要'; button.setAttribute('aria-pressed', 'false'); });
 });
+document.querySelectorAll('.module-audio audio').forEach((audio) => {
+  audio.addEventListener('play', () => {
+    document.querySelectorAll('.module-audio audio').forEach((other) => { if (other !== audio) other.pause(); });
+  });
+});
 </script>
 """
 
