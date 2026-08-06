@@ -205,3 +205,8 @@
 - 依使用者畫面回饋，移除左側自製按鈕的 ▶ 圖示，改為純文字「播放摘要」。
 - 右側原生 audio controls 保留播放、進度與音量控制。
 - Chrome 實測五個按鈕均顯示「播放摘要」、五個原生控制列存在、390px 無水平溢出；GitHub commit `270fd9c` 與 Netlify production 已更新。
+## 2026-08-06｜單一音檔播放規則
+
+- 已補上原生 `audio` 的 `play` 事件監聽；不論使用左側「播放摘要」按鈕或右側原生控制列，只要新音檔開始，其他音檔會自動停止。
+- Chrome 本機與公開 Netlify 均驗證：第一個音檔在第二個開始後 `paused=true`，同時播放數量為 1，390px 無水平溢出。
+- GitHub commit `edec681` 已推送，Netlify production 已更新。
