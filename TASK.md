@@ -181,3 +181,10 @@
 - Netlify site：`https://leadership-coaching-hub.netlify.app`，已建立並連結本地專案。
 - Production deploy 已成功；因 Netlify 站台後台原有 `hugo` build command，本次使用 `--no-build` 上傳目前已驗證的靜態根目錄，避免執行不存在的 Hugo 建置。
 - 公開驗證：首頁與 `LPI_Coach_Chapter11.html` HTTP 200，首頁模組連結與模組05標題／SEO description 均可取得。
+## 2026-08-06｜首頁模組聲音摘要
+
+- 已將 `audio_summaries/module_01_summary.mp3` 至 `module_05_summary.mp3` 對應加入首頁五個模組卡片。
+- 每張卡片提供具 `aria-label` 的播放／暫停按鈕，使用原生 `<audio preload="none">`，同時只允許一個摘要播放。
+- 播放器樣式與行動版版面已加入 `scripts/add_index_audio.py`；`scripts/build_chapters.py` 會在生成首頁後自動套用音檔播放器。
+- GitHub 已推送 commit `828769c`；Netlify production 已重新部署至 `https://leadership-coaching-hub.netlify.app`。
+- Chrome 實測：首頁 5 張卡片、5 個播放按鈕、5 個音檔、390px 無水平溢出；公開首頁 HTTP 200，公開 MP3 可取得 `audio/mpeg`。

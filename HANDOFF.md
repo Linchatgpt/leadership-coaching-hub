@@ -207,3 +207,6 @@ Unknown / needs confirmation.
 ## 2026-08-04｜公開部署
 
 GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify production：`https://leadership-coaching-hub.netlify.app`。站點已完成公開部署，根目錄首頁與模組05公開 URL 已以 HTTP 200 驗證。Netlify 本地連結資料位於被 `.gitignore` 排除的 `.netlify/`；source PDF 原始檔、node_modules、本機管理歷史與暫存檔未上傳。
+## 2026-08-06｜首頁聲音摘要
+
+首頁模組卡片現在連結 `audio_summaries/` 下的五個 MP3 聲音摘要。播放器由 `scripts/add_index_audio.py` 生成，並在 `scripts/build_chapters.py` 完成首頁建置後自動套用。音檔與對應文字稿已納入 GitHub，首頁與音檔已部署到 Netlify production；Chrome 與公開 URL 均已驗證。
