@@ -149,3 +149,5 @@ if '<style>' in index and '</style>' in index:
   index=index[:a]+css+index[b:]
 index=index.replace(index[index.find('<body'):index.find('</body>')+7], '<body class="home-page">'+custom+'</body>')
 (ROOT/'index.html').write_text(index)
+import subprocess
+subprocess.run(['python3', str(ROOT / 'scripts' / 'add_index_audio.py')], check=True)
