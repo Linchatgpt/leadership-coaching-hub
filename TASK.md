@@ -210,3 +210,9 @@
 - 已補上原生 `audio` 的 `play` 事件監聽；不論使用左側「播放摘要」按鈕或右側原生控制列，只要新音檔開始，其他音檔會自動停止。
 - Chrome 本機與公開 Netlify 均驗證：第一個音檔在第二個開始後 `paused=true`，同時播放數量為 1，390px 無水平溢出。
 - GitHub commit `edec681` 已推送，Netlify production 已更新。
+## 2026-08-07｜手機播放不跳頁結構修正
+
+- 「播放摘要」已改為純文字提示，不再是可按下的自製按鈕。
+- 模組卡片改為獨立的 `map-card-link` 與 `module-audio` 結構；原生 audio 控制列不再位於模組連結內，手機按播放鍵不會觸發跳頁。
+- Chrome 本機與公開 Netlify 390px 實測：播放後 URL 留在首頁、五個摘要標籤正常、連結內含 audio 數為 0、同時播放數為 1、無水平溢出。
+- GitHub commit `93af141` 已推送，Netlify production 已更新。
