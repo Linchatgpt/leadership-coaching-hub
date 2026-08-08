@@ -221,3 +221,4 @@
 
 - 新增 `reference_materials/chapters/MODULE_MAP.md`，清楚列出模組 01～05、原始章節資料夾、深入閱讀稿、生成網頁與網站主題的對應關係。
 - 補充深入閱讀稿的正確編輯流程，以及 `chapter_01`～`chapter_03` 為早期資料、目前不屬於首頁正式模組的說明。
+- 另建立 `reference_materials/chapters/MODULE_MAP.html`，可直接用 Chrome 開啟並點擊本機檔案連結。

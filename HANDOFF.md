@@ -229,3 +229,5 @@ GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify produ
 ## 2026-08-08｜模組來源對應索引
 
 新增 `reference_materials/chapters/MODULE_MAP.md`，作為編輯入口索引。正式網站模組 01～05 分別對應來源章節 `chapter_07`～`chapter_11`；每列同時列出 `02_deep_reading_draft.md`、生成後 HTML 與模組主題。編輯深入閱讀時，先依索引找到 Markdown 來源，再執行建置工具生成 HTML。
+
+另提供 `reference_materials/chapters/MODULE_MAP.html`，可直接用 Chrome 開啟，透過按鈕式連結開啟本機深入閱讀稿與生成後網頁。
