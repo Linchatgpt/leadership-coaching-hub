@@ -6,11 +6,11 @@
 
 | 網站模組 | 原始章節資料夾 | 深入閱讀稿 | 生成網頁 | 網站主題 |
 |---|---|---|---|---|
-| 模組 01 | `chapter_07` | [開啟深入閱讀稿](chapter_07/02_deep_reading_draft.md) | [開啟網站頁面](../../LPI_Coach_Chapter07.html) | 走向成功的教練：先把成功說清楚，才知道如何陪伴 |
-| 模組 02 | `chapter_08` | [開啟深入閱讀稿](chapter_08/02_deep_reading_draft.md) | [開啟網站頁面](../../LPI_Coach_Chapter08.html) | 教練能力：在正確的時機，用正確的方式讓對話前進 |
-| 模組 03 | `chapter_09` | [開啟深入閱讀稿](chapter_09/02_deep_reading_draft.md) | [開啟網站頁面](../../LPI_Coach_Chapter09.html) | 教練流程：把一次對話變成一個可回看的學習循環 |
-| 模組 04 | `chapter_10` | [開啟深入閱讀稿](chapter_10/02_deep_reading_draft.md) | [開啟網站頁面](../../LPI_Coach_Chapter10.html) | 教練失去節奏時：把未完成的承諾重新接回工作 |
-| 模組 05 | `chapter_11` | [開啟深入閱讀稿](chapter_11/02_deep_reading_draft.md) | [開啟網站頁面](../../LPI_Coach_Chapter11.html) | 教練也要被教練：把專業精熟變成可持續的工作系統 |
+| 模組 01 | `chapter_07` | [開啟本機深入閱讀稿](</Users/wes_mini/Projects/Leadership Coaching Hub/reference_materials/chapters/chapter_07/02_deep_reading_draft.md>) | [開啟本機網站頁面](</Users/wes_mini/Projects/Leadership Coaching Hub/LPI_Coach_Chapter07.html>) | 走向成功的教練：先把成功說清楚，才知道如何陪伴 |
+| 模組 02 | `chapter_08` | [開啟本機深入閱讀稿](</Users/wes_mini/Projects/Leadership Coaching Hub/reference_materials/chapters/chapter_08/02_deep_reading_draft.md>) | [開啟本機網站頁面](</Users/wes_mini/Projects/Leadership Coaching Hub/LPI_Coach_Chapter08.html>) | 教練能力：在正確的時機，用正確的方式讓對話前進 |
+| 模組 03 | `chapter_09` | [開啟本機深入閱讀稿](</Users/wes_mini/Projects/Leadership Coaching Hub/reference_materials/chapters/chapter_09/02_deep_reading_draft.md>) | [開啟本機網站頁面](</Users/wes_mini/Projects/Leadership Coaching Hub/LPI_Coach_Chapter09.html>) | 教練流程：把一次對話變成一個可回看的學習循環 |
+| 模組 04 | `chapter_10` | [開啟本機深入閱讀稿](</Users/wes_mini/Projects/Leadership Coaching Hub/reference_materials/chapters/chapter_10/02_deep_reading_draft.md>) | [開啟本機網站頁面](</Users/wes_mini/Projects/Leadership Coaching Hub/LPI_Coach_Chapter10.html>) | 教練失去節奏時：把未完成的承諾重新接回工作 |
+| 模組 05 | `chapter_11` | [開啟本機深入閱讀稿](</Users/wes_mini/Projects/Leadership Coaching Hub/reference_materials/chapters/chapter_11/02_deep_reading_draft.md>) | [開啟本機網站頁面](</Users/wes_mini/Projects/Leadership Coaching Hub/LPI_Coach_Chapter11.html>) | 教練也要被教練：把專業精熟變成可持續的工作系統 |
 
 ## 編輯流程
 
