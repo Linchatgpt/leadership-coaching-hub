@@ -216,3 +216,8 @@
 - 模組卡片改為獨立的 `map-card-link` 與 `module-audio` 結構；原生 audio 控制列不再位於模組連結內，手機按播放鍵不會觸發跳頁。
 - Chrome 本機與公開 Netlify 390px 實測：播放後 URL 留在首頁、五個摘要標籤正常、連結內含 audio 數為 0、同時播放數為 1、無水平溢出。
 - GitHub commit `93af141` 已推送，Netlify production 已更新。
+
+## 2026-08-08｜建立模組來源對應索引
+
+- 新增 `reference_materials/chapters/MODULE_MAP.md`，清楚列出模組 01～05、原始章節資料夾、深入閱讀稿、生成網頁與網站主題的對應關係。
+- 補充深入閱讀稿的正確編輯流程，以及 `chapter_01`～`chapter_03` 為早期資料、目前不屬於首頁正式模組的說明。

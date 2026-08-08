@@ -225,3 +225,7 @@ GitHub：`https://github.com/Linchatgpt/leadership-coaching-hub`。Netlify produ
 ## 2026-08-07｜首頁音檔與模組連結分離
 
 首頁模組卡片現在使用「內容連結 + 獨立音訊區」結構。左側只顯示「播放摘要」文字，右側原生 audio controls 不在 `<a>` 內，因此手機點擊播放不會跳至模組頁。單一播放規則仍由全域 `audio play` 監聽維持。
+
+## 2026-08-08｜模組來源對應索引
+
+新增 `reference_materials/chapters/MODULE_MAP.md`，作為編輯入口索引。正式網站模組 01～05 分別對應來源章節 `chapter_07`～`chapter_11`；每列同時列出 `02_deep_reading_draft.md`、生成後 HTML 與模組主題。編輯深入閱讀時，先依索引找到 Markdown 來源，再執行建置工具生成 HTML。

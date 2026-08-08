@@ -91,3 +91,4 @@ Unknown / needs confirmation.
 - 2026-08-06：依使用者提供畫面移除左側聲音播放 ▶ 圖示，改為「播放摘要」純文字；保留右側原生 audio controls。Chrome 五個按鈕與原生控制列、390px 版面確認正常；GitHub 270fd9c、Netlify production 已更新。
 - 2026-08-06：使用 Chrome 重現原生控制列可同時播放兩個音檔的例外，補上全域 audio play 事件監聽。修正後本機與公開 Netlify 均確認第二個音檔開始時第一個自動停止、playingCount=1、390px 無溢出；GitHub edec681、Netlify production 已更新。
 - 2026-08-07：依使用者回報調整首頁音檔：移除可按的「播放摘要」自製按鈕，改為純文字；將模組連結與原生 audio 控制列拆成兄弟結構，修正手機播放時跳轉模組問題。Chrome 本機／公開 Netlify 實測 URL 不跳轉、audio 不在連結內、播放數 1、390px 無溢出；GitHub 93af141、Netlify production 更新完成。
+- 2026-08-08：依使用者需求新增 `reference_materials/chapters/MODULE_MAP.md`，建立模組 01～05、來源章節資料夾、深入閱讀 Markdown、生成 HTML 與網站主題的清楚對應索引；並註明 `chapter_01`～`chapter_03` 為早期資料，避免誤編輯非現行模組來源。
